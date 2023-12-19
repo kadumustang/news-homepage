@@ -46,8 +46,24 @@ img {
   padding: 1rem;
 }
 
-.header nav {
-  display: none;
+.header nav ul {
+    margin: 1rem 0;
+    display: flex;
+    font-size: 1.25rem;
+    gap: 2rem;
+    color: var(--dark-grayish);
+}
+
+.header nav li:hover {
+    background-color: var(--Soft-orange);
+    cursor: pointer;
+}
+
+.header #menu-button button {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .showcase {
@@ -147,9 +163,18 @@ img {
     margin: 1rem 0;
 }
 
-@media (min-width: 1024px) {
+.cards article h4:hover {
+    background-color: var(--Soft-orange);
+    cursor: pointer;
+}
+
+@media (min-width: 1440px) {
     .header {
         padding: 2rem 1.25rem;
+    }
+
+    .header #menu-button button {
+        display: none;
     }
 
     .showcase {
